@@ -1,4 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+            hostname: 'al-mustofa.vercel.app',
+          },
+          {
+            hostname: 'al-mustofa.vercel.app',
+          },
+        ],
+      },
+};
 
 export default nextConfig;
