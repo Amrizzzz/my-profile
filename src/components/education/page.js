@@ -51,7 +51,7 @@ export default function Education() {
             />
           </svg>
         </div>
-        <div className="timeline-end mb-10 md:text-end" data-aos="fade-left" data-aos-duration="500" data-aos-delay="00">
+        <div className="timeline-end mb-10 md:text-end" data-aos="fade-left" data-aos-duration="500" data-aos-delay="600">
           <div className="timeline-start mb-10 md:text-end">
             <div className="text-lg font-black">2016 - 2021</div>
             <div className="text-md font-black italic">
