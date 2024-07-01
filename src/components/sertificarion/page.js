@@ -4,13 +4,19 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Activity() {
+export default function Sertification() {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
     <>
-      <h1 className="text-lg italic font-black" data-aos="fade-right" data-aos-duration="500">Experience</h1>
+      <h1
+        className="text-lg italic font-black"
+        data-aos="fade-right"
+        data-aos-duration="500"
+      >
+        Certification
+      </h1>
       <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li data-aos="fade-down" data-aos-duration="500">
           <div className="timeline-middle">
@@ -33,16 +39,11 @@ export default function Activity() {
             data-aos-duration="500"
             data-aos-delay="400"
           >
-            <time className="font-mono italic">25/02/2022 - 01/01/2024</time>
-            <div className="text-md font-black italic">
-              PT.DGP NET INTERKONTINENTAL
+            <time className="font-mono italic">2020</time>
+            <div className="text-lg font-black italic">
+              SOFTWARE DEVELOPMENT FUNDAMENTALS (PROGRAMMER)
             </div>
-            <div className="text-lg font-black">Junior Front-End</div>
-            <ul className="list-disc list-inside xl:text-end xl:timeline-end">
-              <li>Fix some minor bugs</li>
-              <li>Create new feature</li>
-              <li>Deployment project to main master</li>
-            </ul>
+            <div className="text-sm italic">National Professional Certification Board (BNSP), ID 620102514400017452019</div>
           </div>
           <hr />
         </li>

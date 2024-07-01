@@ -15,8 +15,8 @@ const navigation = [
   { name: "Dashboard", href: "/", current: true },
   { name: "About", href: "/About", current: false },
   { name: "Projects", href: "/Projects", current: false },
-  { name: "Experience", href: "/Resume", current: false },
-  { name: "Education", href: "/Education", current: false },
+  { name: "Resume", href: "/Resume", current: false },
+  // { name: "Education", href: "/Education", current: false },
   // { name: "", href: "/", current: false },
 ];
 // const userNavigation = [
@@ -55,11 +55,11 @@ export default function Layout(props) {
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <Link href="/" >
+                      <Link href="/">
                         <img
                           className="h-8 w-20"
                           src="/logo.png"
-                          alt="Your Company"
+                          alt="My Logo"
                           onClick={() => onClcikMenu("Dashboard")}
                         />
                       </Link>
@@ -140,6 +140,20 @@ export default function Layout(props) {
           </div>
         </header>
         <main>{props.children}</main>
+        <footer className="w-full bg-white p-8">
+          <hr className="my-8 border-blue-gray-50" />
+          <div className="flex gap-4 text-center justify-center items-center font-normal text-blue-500">
+            <Link href="/">
+              <img
+                className="h-8 w-20"
+                src="/logo.png"
+                alt="My Logo"
+                onClick={() => onClcikMenu("Dashboard")}
+              />
+            </Link>
+            <p>&copy; 2024 Muhamad Amrizal</p>
+          </div>
+        </footer>
       </div>
     </>
   );

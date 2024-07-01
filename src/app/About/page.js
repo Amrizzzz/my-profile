@@ -73,7 +73,7 @@ export default function About() {
           several projects, for now I only focus on web applications{" "}
         </h4>
         <br />
-        <h4
+        {/* <h4
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="600"
@@ -88,7 +88,7 @@ export default function About() {
         <br />
         <br />
         <br />
-        <br />
+        <br /> */}
       </div>
       {/* <Activity/> */}
     </main>
