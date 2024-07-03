@@ -3,95 +3,109 @@ import Activity from "@/components/activity/page";
 import Aos from "aos";
 import Image from "next/image";
 import React, { useEffect } from "react";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 
 export default function About() {
   useEffect(() => {
-    Aos.init()
-  },[])
+    Aos.init();
+  }, []);
   return (
-    <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 sm:h-11 h-full">
-      <h1
-        className="text-blue-500 font-bold text-2xl text-center"
-        data-aos="zoom-in"
-        data-aos-duration="500"
-      >
-        About My Self
-      </h1>
-      <div className="md:flex md:gap-10 md:items-center">
-        <div
-          className="flex justify-center items-center mb-5"
-          data-aos="fade-right"
-          data-aos-easing="linear"
+    <>
+      <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 sm:h-11 h-full">
+        <h1
+          className="text-blue-500 font-bold text-2xl text-center"
+          data-aos="zoom-in"
           data-aos-duration="500"
         >
-          <Image
-            className="shadow-lg rounded-lg"
-            src="/foto.png"
-            alt="..."
-            height={600}
-            width={450}
-          />
-        </div>
-        {/* {tanggal} */}
-        <div className="text-left w-full">
-          <div className="overflow-x-auto">
-            <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-              {desc1.map((data) => (
-                <tbody
-                  className="divide-y divide-gray-200"
-                  data-aos="fade-right"
-                  data-aos-easing="linear"
-                  data-aos-duration="600"
-                  data-aos-delay={data.delay}
-                >
-                  <tr>
-                    <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                      {data.title}
-                    </td>
-                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                      :
-                    </td>
-                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                      {data.desc}
-                    </td>
-                  </tr>
-                </tbody>
-              ))}
-            </table>
+          About My Self
+        </h1>
+        <div className="md:flex md:gap-10 md:items-center">
+          <div
+            className="flex justify-center items-center mb-5"
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
+            <Image
+              className="shadow-lg rounded-lg"
+              src="/foto.png"
+              alt="..."
+              height={600}
+              width={450}
+            />
+          </div>
+          {/* {tanggal} */}
+          <div className="text-left w-full">
+            <div className="overflow-x-auto">
+              <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+                {desc1.map((data) => (
+                  <tbody
+                    className="divide-y divide-gray-200"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="600"
+                    data-aos-delay={data.delay}
+                  >
+                    <tr>
+                      <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                        {data.title}
+                      </td>
+                      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                        :
+                      </td>
+                      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                        {data.desc}
+                      </td>
+                    </tr>
+                  </tbody>
+                ))}
+              </table>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="mt-2 text-m">
-        <h4
-          data-aos="fade-right"
-          data-aos-easing="linear"
-          data-aos-duration="600"
-          data-aos-delay="1200"
-        >
-          I am a young programmer with sufficient experience and have created
-          several projects, for now I only focus on web applications{" "}
-        </h4>
-        <br />
-        {/* <h4
+        <div className="mt-2 text-m">
+          <h4
+            data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="600"
+            data-aos-delay="1200"
+          >
+            I am a young programmer with sufficient experience and have created
+            several projects, for now I only focus on web applications{" "}
+          </h4>
+          <br />
+          {/* <h4
           data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="600"
           data-aos-delay="1400"
-        >
+          >
           Apart from that, I also have several certificates including:
-        </h4>
-        <br />
-        <br />
-        <List1 />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br /> */}
-      </div>
-      {/* <Activity/> */}
-    </main>
+          </h4>
+          <br />
+          <br />
+          <List1 />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br /> */}
+        </div>
+        <hr className="my-8 border-blue-gray-50" />
+        <div className="flex gap-4 text-center justify-center items-center font-normal text-blue-500">
+        <img
+              className="h-8 w-20"
+              src="/logo.png"
+              alt="My Logo"
+            />
+          <p>&copy; 2024 Muhamad Amrizal</p>
+        </div>
+        {/* <Activity/> */}
+      </main>
+      <footer className="w-full bg-white p-8">
+        
+      </footer>
+    </>
   );
 }
 

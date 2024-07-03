@@ -140,7 +140,7 @@ export default function Layout(props) {
           </div>
         </header>
         <main>{props.children}</main>
-        <footer className="w-full bg-white p-8">
+        {/* <footer className="w-full bg-white p-8">
           <hr className="my-8 border-blue-gray-50" />
           <div className="flex gap-4 text-center justify-center items-center font-normal text-blue-500">
             <Link href="/">
@@ -153,7 +153,7 @@ export default function Layout(props) {
             </Link>
             <p>&copy; 2024 Muhamad Amrizal</p>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </>
   );

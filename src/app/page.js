@@ -4,11 +4,12 @@ import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Like from "./test/page";
 
 export default function Home() {
   useEffect(() => {
     Aos.init();
-  },[]);
+  }, []);
   return (
     <>
       {/* <Layout /> */}
@@ -26,7 +27,17 @@ export default function Home() {
         >
           <Image src="/foto.png" alt="..." height={400} width={200} />
         </div>
+        <div data-aos="fade-up" data-aos-easing="linear" className="mt-6">
+          <Like />
+        </div>
       </main>
+      <footer className="w-full bg-white p-8">
+        <hr className="my-8 border-blue-gray-50" />
+        <div className="flex gap-4 text-center justify-center items-center font-normal text-blue-500">
+          <img className="h-8 w-20" src="/logo.png" alt="My Logo" />
+          <p>&copy; 2024 Muhamad Amrizal</p>
+        </div>
+      </footer>
     </>
     // <>
     //   <Layout />
