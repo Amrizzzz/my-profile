@@ -15,7 +15,7 @@ export default function Home() {
       {/* <Layout /> */}
       <main className="mx-auto max-w-7xl px-4 py-11 sm:px-6 lg:px-8">
         <div data-aos="zoom-in" className="flex justify-center items-center">
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-2xl font-bold text-center">
             Hello There, Welcom to my website !
           </h1>
         </div>
@@ -27,9 +27,7 @@ export default function Home() {
         >
           <Image src="/foto.png" alt="..." height={400} width={200} />
         </div>
-        <div data-aos="fade-up" data-aos-easing="linear" className="mt-6">
-          <Like />
-        </div>
+        
       </main>
       <footer className="w-full bg-white p-8">
         <hr className="my-8 border-blue-gray-50" />

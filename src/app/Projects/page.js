@@ -5,6 +5,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import Like from "../test/page";
 // import { useRouter } from "next/router";
 
 // export default function Projects() {
@@ -34,7 +35,7 @@ const people = [
     imageUrl: "/hyundai.svg",
     year: "20/06/2023",
     lastSeenDateTime: "2023-01-23T13:23Z",
-    link: "https://www.hyundai-gowa-tangerang.com/",
+    link: "https://hyundai-prm.vercel.app/",
     width: 100,
     height: 200,
   },
@@ -58,11 +59,11 @@ export default function Example() {
   }, []);
   return (
     <>
-      <main className="mx-auto max-w-7xl px-4 py-6  lg:px-8">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+      <main className="mx-auto max-w-7xl px-4 py-6  lg:px-8 sm:items-center sm:justify-center">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-4">
           {people.map((person) => (
             <div
-              className="card card-compact w-96 bg-base-100 shadow-xl"
+              className="card card-compact w-auto bg-base-100 shadow-md"
               data-aos="fade-right"
               data-aos-easing="linear"
               data-aos-duration="700"
@@ -83,22 +84,29 @@ export default function Example() {
                 <p>{person.email}</p>
                 <p>Publish : {person.year}</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary">See Project {">"}</button>
+                  <a href={person.link} target="__blank">
+                    <button className="btn btn-primary">
+                      See Project {">"}
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        <div data-aos="fade-up" data-aos-easing="linear" className="pt-11">
+          <Like />
+        </div>
       </main>
       <footer className="w-full bg-white p-8">
         <hr className="my-8 border-blue-gray-50" />
         <div className="flex gap-4 text-center justify-center items-center font-normal text-blue-500">
-        <img
-              className="h-8 w-20"
-              src="/logo.png"
-              alt="My Logo"
-              // onClick={() => onClcikMenu("Dashboard")}
-            />
+          <img
+            className="h-8 w-20"
+            src="/logo.png"
+            alt="My Logo"
+            // onClick={() => onClcikMenu("Dashboard")}
+          />
           <p>&copy; 2024 Muhamad Amrizal</p>
         </div>
       </footer>

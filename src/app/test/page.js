@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import TestAPI from "@/components/test/test";
 import CreateLikesAPI1 from "@/components/test/createLikes";
+import sendEmotionData from "@/components/test/createLikes";
 import { useRouter } from "next/navigation";
 
 export default function Like() {
@@ -44,8 +45,9 @@ export default function Like() {
     // console.log(data);
     try {
       const resp = await CreateLikesAPI1(data);
+    //   const resp = await sendEmotionData(data);
 
-    //   console.log(resp);
+      console.log(resp);
 
       if (resp?.created === 1) {
         fetchData();
