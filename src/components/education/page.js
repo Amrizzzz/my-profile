@@ -39,7 +39,7 @@ export default function Education() {
             className="timeline-start mb-10 md:text-end"
             data-aos="fade-right"
             data-aos-duration="500"
-            data-aos-delay="1000"
+            // data-aos-delay="500"
           >
             <div className="text-lg">2013 - 2016</div>
             <div className="text-md font-black italic">
@@ -74,9 +74,9 @@ export default function Education() {
             //   data-aos={screenSize !== 'lg' && 'xl' && '2xl' ? "fade-left":"fade-right"}
               data-aos="fade-left"
               data-aos-duration="500"
-              data-aos-delay="1300"
+              // data-aos-delay="800"
             >
-              <div className="timeline-start mb-10 md:text-end">
+              <div className="timeline-start mb-10 text-start">
                 <div className="text-lg">2016 - 2021</div>
                 <div className="text-md font-black italic">
                   BACHELOR`S DEGREE : BACHELOR OF COMPUTER SCIENCE
@@ -94,7 +94,7 @@ export default function Education() {
               data-aos-duration="500"
               data-aos-delay="1300"
             >
-              <div className="timeline-start mb-10 md:text-end">
+              <div className="timeline-start mb-10 md:text-start">
                 <div className="text-lg">2016 - 2021</div>
                 <div className="text-md font-black italic">
                   BACHELOR`S DEGREE : BACHELOR OF COMPUTER SCIENCE

@@ -59,7 +59,7 @@ export default function Example() {
   }, []);
   return (
     <>
-      <main className="mx-auto max-w-7xl px-4 py-6  lg:px-8 sm:items-center sm:justify-center">
+      <main className="mx-auto max-w-7xl px-4 py-6 lg:px-8 sm:items-center sm:justify-center">
         <div className="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-4">
           {people.map((person) => (
             <div
@@ -98,7 +98,7 @@ export default function Example() {
           <Like />
         </div>
       </main>
-      <footer className="w-full bg-white p-8">
+      {/* <footer className="w-full bg-white p-8">
         <hr className="my-8 border-blue-gray-50" />
         <div className="flex gap-4 text-center justify-center items-center font-normal text-blue-500">
           <img
@@ -109,7 +109,7 @@ export default function Example() {
           />
           <p>&copy; 2024 Muhamad Amrizal</p>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }

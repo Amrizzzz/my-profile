@@ -12,10 +12,10 @@ const user = {
     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
 };
 const navigation = [
-  { name: "Dashboard", href: "/", current: true },
-  { name: "About", href: "/About", current: false },
-  { name: "Projects", href: "/Projects", current: false },
-  { name: "Resume", href: "/Resume", current: false },
+  { name: "Dashboard", href: "#home", current: true },
+  { name: "About", href: "#about", current: false },
+  { name: "Projects", href: "#projects", current: false },
+  { name: "Resume", href: "#resume", current: false },
   // { name: "Education", href: "/Education", current: false },
   // { name: "", href: "/", current: false },
 ];
@@ -48,14 +48,14 @@ export default function Layout(props) {
         ```
       */}
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-400">
+        <Disclosure as="nav" className="bg-gray-400 w-full fixed z-50">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <Link href="/">
+                      <Link href="#home">
                         <img
                           className="h-8 w-20"
                           src="/logo.png"
@@ -132,13 +132,13 @@ export default function Layout(props) {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow">
+        {/* <header className="bg-white shadow">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold tracking-tight text-gray-900">
               {title}
             </h1>
           </div>
-        </header>
+        </header> */}
         <main>{props.children}</main>
         {/* <footer className="w-full bg-white p-8">
           <hr className="my-8 border-blue-gray-50" />
