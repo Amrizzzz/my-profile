@@ -50,6 +50,17 @@ const people = [
     width: 100,
     height: 100,
   },
+  {
+    name: "Audio Care",
+    email: "test hearing web",
+    limit: "450",
+    imageUrl: "/audio_icon.png",
+    year: "30/09/2026",
+    lastSeenDateTime: "2026-09-30T09:05Z",
+    link: "https://audiocare-kappa.vercel.app/",
+    width: 100,
+    height: 100,
+  },
 ];
 
 export default function Example() {
